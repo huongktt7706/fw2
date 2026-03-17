@@ -1,4 +1,19 @@
 {
-  "products": [],
-  "users": []
+  "stories": [
+    {
+      "title": "fdvf",
+      "author": "vfdvfd",
+      "image": "vfvfd",
+      "description": "vfdvf",
+      "id": 1
+    }
+  ],
+  "categories": [
+    {
+      "title": "vfvd",
+      "description": "fdvfd",
+      "active": true,
+      "id": 1
+    }
+  ]
 }
