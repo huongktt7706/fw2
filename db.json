@@ -1,26 +1,11 @@
 {
   "stories": [
     {
-      "title": "fdvf",
-      "author": "vfdvfd",
-      "image": "vfvfd",
-      "description": "vfdvf",
-      "id": 1
-    },
-    {
-      "title": "fdvf",
-      "author": "vfdvfd",
-      "image": "vfvfd",
-      "description": "vfdvf",
+      "title": "fdvf1111",
+      "author": "vfdvfd111",
+      "image": "vfvfd111",
+      "description": "vfdvf111",
       "id": 2
-    },
-    {
-      "title": "eve",
-      "author": "vreve",
-      "image": "vrevre",
-      "description": "verv",
-      "categoryId": 1,
-      "id": 3
     }
   ],
   "categories": [

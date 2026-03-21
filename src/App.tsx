@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import { Table } from "antd";
 import StoryForm from "./page/lab4/storiesForm";
 import CategoryForm from "./page/lab4/categoryForm";
-
+import StoryList from "./page/lab5/list-story"
+import EditStory from "./page/lab6/story-edit"
+import {Routes, Route } from "react-router-dom";
 
 function App() {
   
@@ -42,12 +44,22 @@ function App() {
       {/* MAIN CONTENT */}
       <div className="max-w-6xl mx-auto mt-10 px-4 text-center">
         <h1 className="text-4xl font-bold mb-4">Chào mừng đến với WEB2091</h1>
-          <StoryForm/>
-          <CategoryForm/>
-        {/* <Table columns={columns} dataSource={data} pagination={{ pageSize: 2 }} />
-        <h1>Product</h1>
-        <Table columns={productColumns} dataSource={productData} pagination={{ pageSize: 2 }} />
-        <Table columns={userColumns} dataSource={userData} pagination={{ pageSize: 2 }} /> */}
+           <Routes>
+          {/* Trang chủ */}
+          <Route path="/" element={<h1>Trang chủ</h1>} />
+
+          {/* Danh sách */}
+          <Route path="/stories" element={<StoryList />} />
+
+          {/* Thêm mới */}
+          <Route path="/add" element={<StoryForm />} />
+
+          {/* Edit */}
+          <Route path="/edit/:id" element={<EditStory />} />
+
+          {/* Category */}
+          <Route path="/category" element={<CategoryForm />} />
+        </Routes>
       </div>
 
       <Toaster />
