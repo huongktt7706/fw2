@@ -11,7 +11,7 @@ const EditStory = () => {
   const queryClient = useQueryClient();
 
  
-  const { data, isLoading } = useQuery({
+  const { data,isLoading } = useQuery({
     queryKey: ["story", id],
     queryFn: async () => {
       const res = await axios.get(`http://localhost:3000/stories/${id}`);
